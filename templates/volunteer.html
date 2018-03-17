@@ -1,0 +1,103 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+    <title>Стать волонтером</title>
+    <link rel="stylesheet" href="{% static 'css/style3.css' %}">
+    <link rel="stylesheet" href="{% static 'css/animate.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/alertify.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/default.min.css' %}">
+    <link rel="shortcut icon" href="{% static 'img/coddy-icon.png' %}" type="image/x-icon">
+    <script src="{% static 'js/jquery.js' %}"></script>
+    <script src="{% static 'js/wow.min.js' %}"></script>
+    <script src="{% static 'js/alertify.min.js' %}"></script>
+    <script src="{% static 'js/checkbox2.js' %}"></script>
+    <script>
+        new WOW().init();
+    </script>
+</head>
+<body>
+    <header class = "main-header">
+        <div class="header-container">
+            <div class="logos">
+                <a href="https://coddyschool.com/" target="_blank">
+                    <img src="{% static 'img/coddy-logo.png' %}" alt="Coddy" width="5%" height="5%">
+                </a>
+                <a href="http://www.golfstreamfond.ru/" target="_blank">
+                    <img src="{% static 'img/golfstream-logo.png' %}" alt="Golfstream" width="5%" height="5%">
+                </a>
+            </div>
+            <div class="header-title">
+                <h1>Присоединяйтесь!</h1>
+            </div>
+            <div class="header-title-com">
+                <h2>Ради светлого будущего наших детей</h2>
+            </div>
+        </div>
+    </header>
+    <section class="donate-form">
+        <div class="form-title">
+            <h1>Хочу помочь!</h1>
+        </div>
+        <div class="form-body">
+            <form action="#" method="POST">
+                {% csrf_token %}
+                <div class="form-name">
+                    <div class="form-name-title">Имя</div>
+                    <div class="form-name-field">
+                        {{ form.name }}
+                    </div>
+                </div>
+                <br>
+                <div class="form-name">
+                    <div class="form-name-title">Фамилия</div>
+                    <div class="form-name-field">
+                        {{ form.surname }}
+                    </div>
+                </div>
+                <br>
+                <div class="form-name">
+                    <div class="form-name-title">E-mail</div>
+                    <div class="form-name-field">
+                        {{ form.email }}
+                    </div>
+                </div>
+                <br>
+                <div class="form-name">
+                    <div class="form-name-title">Телефон</div>
+                    <div class="form-name-field">
+                        {{ form.tel }}
+                    </div>
+                </div>
+                <br>
+                <div class="checkboxes">
+                    <div class="chb mar">
+                        <input type="checkbox" required id="policy">
+                        <label for="policy">Я подтверждаю свое согласие на обработку моих персональных данных.
+                            И подтверждаю, что прочитал(а) и согласна(ен) с <a target="_blank" href="https://coddyschool.com/consent/">Условиями использования и Политикой защиты персональных данных</a>
+                        </label>
+                    </div>
+                </div>
+                <br>
+                <input type="submit" class="button" value = "Отправить" name="send">
+            </form>
+        </div>
+        <div class="form-coment">
+            <span>Ваша поддержка очень важна для нас! Мы уверены, каждый ребенок заслуживает светлое будущее =)</span>
+        </div>
+    </section>
+    <footer class="main-footer wow fadeIn">
+        <div class="footer-title">
+            <h1>Мы всегда на связи!</h1>
+        </div>
+        <div class="horizontal-line"></div>
+        <div class="footer-com">
+            <span>Если у вас остались вопросы, появились идеи<br>
+                или желание обсудить возможное сотрудничество, пишите<br> нам по адресу info@coddyschool.com
+            </span>
+        </div>
+    </footer>
+</body>
+</html>

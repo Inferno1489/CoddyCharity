@@ -1,0 +1,321 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Coddy&Гольфстрим</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="shortcut icon" href="{% static 'img/coddy-icon.png' %}" type="image/x-icon">
+    <script src="{% static 'js/jquery.js' %}"></script>
+    <script src="{% static 'js/amazingcarousel.js' %}"></script>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/initcarousel-1.css' %}">
+    <script src="{% static 'js/initcarousel-1.js' %}"></script>
+    <script src="{% static 'js/scroll.js' %}"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+</head>
+<body>
+    <header>
+        <div class="header-title grid">
+            <div class="header-title-name">
+                <span>CODDY | Гольфстрим</span>
+            </div>
+            <div class="buttons bts grid">
+                <div class="drop-menu">
+                    <img src="{% static 'img/drop-menu-icon2.png' %}" alt="Drop menu" align="right">
+                </div>
+                <a href="#pre1">О проекте</a>
+                <a href="#pre2">Как это работает</a>
+                <a href="#pre3">Как помочь</a>
+                <a href="#pre4">Контакты</a>
+            </div>
+            <div class="change-lang">
+                <a href="{% url "main_en" %}">
+                    <img src="{% static 'img/en-icon.png' %}" alt="Change language to English">
+                </a>
+            </div>
+        </div>
+        <div class="drop-menu-active">
+            <div class="drop-menu-buttons">
+                <a href="#pre1">
+                    <div class="drop-menu-button">
+                        <span>О проекте</span>
+                    </div>
+                </a>
+                <a href="#pre2">
+                    <div class="drop-menu-button">
+                        <span>Как это работает</span>
+                    </div>
+                </a>
+                <a href="#pre3">
+                    <div class="drop-menu-button">
+                        <span>Как помочь</span>
+                    </div>
+                </a>
+                <a href="#pre4">
+                    <div class="drop-menu-button">
+                        <span>Контакты</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <a id="pre1"></a>
+        <div class="header-body">
+            <div class="company-logos">
+                <a href="https://coddyschool.com/" target="_blank"><img src="{% static 'img/coddy-logo.png' %}" alt="Coddy" width="10%" height="10%" ></a>
+                <a href="http://www.golfstreamfond.ru/" target="_blank"><img src="{% static 'img/golfstream-logo.png' %}" alt="Golfstream" width="10%" height="10%"></a>
+            </div>
+            <div class="header-body-text">
+                <div class="text">Мы запускаем благотворительный проект ―
+                    помощь детям с особенностями развития и здоровья, из неполных, малообеспеченных семей, находящимся на домашнем обучении и детям-сиротам.
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="vol-don grid">
+        <div class="join">
+            <div class="join-text">
+                <div class="join-com">
+                    Поддержите нас в нашем начинании!
+                </div>
+                <div class="join-text-img">
+                    <img src="{% static 'img/donate.png' %}" alt="Donate">
+                </div>
+                <div class="button">
+                    <div class="button-real">
+                        <a href="{% url "donate" %}" target="_blank">Хочу пожертвовать</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="donate">
+            <div class="join-text">
+                <div class="join-com-less">
+                    Присоединяйтесь ‒ мы будем рады волонтерам!
+                </div>
+                <div class="join-text-img">
+                    <img src="{% static 'img/join_pr.png' %}" alt="Hand" width="26%" height="26%">
+                </div>
+                <div class="button">
+                    <div class="button-real">
+                        <a href="{% url "volunteer" %}" target="_blank">Хочу помочь</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="info grid">
+        <div class="info-text">
+            <span>
+                Школа программирования CODDY и Благотворительный Фонд «Гольфстрим»
+                открывают новое направление ‒ помощь детям, оказавшимся в трудной жизненной ситуации!
+            </span>
+        </div>
+        <div class="info-text-wbg grid">
+            <div class="info-text-wbg-real">
+                <span>
+                    Мы помогаем особым детям, которые хотят получать дополнительные знания, но у них нет такой возможности. В рамках программы мы проводим бесплатные онлайн-занятия с подопечными Фонда
+                    по программированию, дизайну, финансовой
+                    и компьютерной грамотности, компьютерной графике, созданию мультфильмов и электронной музыки,
+                    а также по многим другим направлениям.
+                </span>
+            </div>
+        </div>
+    </section>
+    <a id="pre2"></a>
+    <section class="how-it-works">
+        <div class="hiw-title">
+            <h1>КАК ЭТО РАБОТАЕТ</h1>
+        </div>
+        <div class="cards grid">
+            <div class="card">
+                <div class="card-comment">
+                    <span>Мы находим лучших преподавателей для групповых и индивидуальных занятий с детьми по Skype</span>
+                </div>
+                <div class="card-img1">
+                    <div class="card-title">
+                        <span>Преподаватели</span>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-comment">
+                    <span>Находим учеников среди подопечных Благотворительного Фонда «Гольфстрим»</span>
+                </div>
+                <div class="card-img2">
+                    <div class="card-title">
+                        <span>Ученики</span>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-comment">
+                    <span>Ребята получают навыки 21 века и открывают для себя новый мир возможностей в работе и в жизни</span>
+                </div>
+                <div class="card-img3">
+                    <div class="card-title">
+                        <span>Обучение</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <a id="pre3"></a>
+    <section class="how-to-help">
+        <div class="hth-title">
+            <h2>Как можно<br> помочь</h2>
+        </div>
+        <div class="hth-card1 grid">
+            <div class="hth-card-img1">
+
+            </div>
+            <div class="hth-card-text">
+                <div class="hth-card-text-title">
+                    <span>
+                        Стать преподавателем-волонтером
+                    </span>
+                </div>
+                <div class="hth-card-text-comment">
+                    <span>
+                        Посвятите 1 час в неделю на проведение онлайн-занятия для детей
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="hth-card2 grid">
+            <div class="hth-card-img2">
+
+            </div>
+            <div class="hth-card-text">
+                <div class="hth-card-text-title">
+                    <span>
+                        Подарить компьютер
+                    </span>
+                </div>
+                <div class="hth-card-text-comment">
+                    <span>
+                        Компьютер для обучения детей на дому
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="hth-card3 grid">
+            <div class="hth-card-img3">
+
+            </div>
+            <div class="hth-card-text">
+                <div class="hth-card-text-title">
+                    <span>
+                        Пожертвовать деньги
+                    </span>
+                </div>
+                <div class="hth-card-text-comment">
+                    <span>
+                        Отправить СМС на номер 3443 с текстом Гольфстрим_300, где «300» – это любая сумма пожертвования
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="vols">
+        <div class="vols-title">
+            <h1>Встречайте наших волонтеров</h1>
+        </div>
+        <div class="vols-title-h2">
+            <h2>Эти люди предложили свою помощь и мы рады включить их в свою команду.</h2>
+        </div>
+
+        <div id="amazingcarousel-container-1">
+            <div id="amazingcarousel-1" style="display:none;position:relative;width:100%;max-width:720px;margin:0 auto 0;">
+                <div class="amazingcarousel-list-container">
+                    <ul class="amazingcarousel-list">
+                        {% for vo in Vols %}
+                        <li class="amazingcarousel-item">
+                            <div class="amazingcarousel-item-container">
+        <div class="amazingcarousel-image"> <a href = "/{{ vo.image.url }}" title={{ vo.name }} class="html5lightbox" data-group="amazingcarousel-1"><img src="/{{ vo.image.url }}"  alt={{ vo.name }} /></a></div>
+        <div class="amazingcarousel-title">{{ vo.name }} {{ vo.surname }}</div>
+        <div class="amazingcarousel-description">{{ vo.disc }}</div>                    </div>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                    <div class="amazingcarousel-prev"></div>
+                    <div class="amazingcarousel-next"></div>
+                </div>
+                <div class="amazingcarousel-nav"></div>
+                <div class="amazingcarousel-engine"><a href="http://amazingcarousel.com">JavaScript Image Scroller</a></div>
+            </div>
+        </div>
+    </section>
+    <a id="pre4"></a>
+    <section class="contacts grid">
+        <div class="con-left">
+            <div class="con-left-text">
+                <div class="con-left-text-don">
+                    <a href="{% url "donate" %}" target="_blank">
+                        <span>Пожертвовать</span>
+                        <img src="{% static 'img/arrow.png' %}" alt="Arrow">
+                    </a>
+                </div>
+                <div class="con-left-text-vol">
+                    <a href="{% url "volunteer" %}" target="_blank">
+                        <span>Стать волонтером</span>
+                        <img src="{% static 'img/arrow.png' %}" alt="Arrow">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="con-right">
+            <div class="con-right-title">
+                <h1>Контакты</h1>
+            </div>
+            <div class="con-right-urls">
+                <div class="url">
+                    <a href="http://www.golfstreamfond.ru/" target="_blank">
+                        <span>Страница Гольфстрима</span>
+                        <img src="{% static 'img/arrow2.png' %}" alt="Arrow">
+                    </a>
+                </div>
+                <div class="url">
+                    <a href="https://vk.com/golfstream_fond" target="_blank">
+                        <span>Гольфстрим в ВК</span>
+                        <img src="{% static 'img/arrow2.png' %}" alt="Arrow">
+                    </a>
+                </div>
+                <div class="url">
+                    <a href="https://www.instagram.com/golfstreamfond.ru/" target="_blank">
+                        <span>Гольфстрим в Instagram</span>
+                        <img src="{% static 'img/arrow2.png' %}" alt="Arrow">
+                    </a>
+                </div>
+                <div class="url">
+                    <a href="https://www.facebook.com/Golfstreamfond" target="_blank">
+                        <span>Гольфстрим в Facebook</span>
+                        <img src="{% static 'img/arrow2.png' %}" alt="Arrow">
+                    </a>
+                </div>
+                <div class="url">
+                    <a href="https://twitter.com/Golfstreamfund" target="_blank">
+                        <span>Гольфстрим в Twitter</span>
+                        <img src="{% static 'img/arrow2.png' %}" alt="Arrow">
+                    </a>
+                </div>
+                <div class="url">
+                    <a href="https://ok.ru/bfgolfstri" target="_blank">
+                        <span>Гольфстрим в ОК</span>
+                        <img src="{% static 'img/arrow2.png' %}" alt="Arrow">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="main-footer">
+        <div class="main-footer-name">
+            <span> &copy Школа программирования для детей CODDY &reg</span>
+        </div>
+        <div class="main-footer-logo">
+            <span>~&copy~</span>
+            <span>ID</span>
+        </div>
+    </footer>
+</body>
+</html>
