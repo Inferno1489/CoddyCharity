@@ -3,7 +3,7 @@
 
 from django.db import models
 from django.utils import timezone
-from datetime import datetime
+import datetime
 # Create your models here.
 
 
@@ -31,7 +31,7 @@ class Donate(models.Model):
     comp = models.BooleanField(blank=True)
     sms = models.BooleanField(blank=True)
     date = models.DateField(blank=True, default=timezone.now)
-    time = models.TimeField(blank=True, default=datetime.now())
+    time = models.TimeField(blank=True, default=datetime.datetime.now())
 
     def __str__(self):
         return self.name
