@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c3d1f7c7-33be-4274-a360-c68e187dc223" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/coddy/models.py" afterPath="$PROJECT_DIR$/coddy/models.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CoddyCharity/settings.py" afterPath="$PROJECT_DIR$/CoddyCharity/settings.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -62,8 +62,8 @@
       <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CoddyCharity/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="107" column="22" lean-forward="true" selection-start-line="107" selection-start-column="22" selection-end-line="107" selection-end-column="22" />
+            <state relative-caret-position="306">
+              <caret line="114" column="0" lean-forward="true" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -142,10 +142,10 @@
         <option value="$PROJECT_DIR$/coddy/static/js/checkbox2_en.js" />
         <option value="$PROJECT_DIR$/coddy/static/css/style2.css" />
         <option value="$PROJECT_DIR$/coddy/forms.py" />
-        <option value="$PROJECT_DIR$/CoddyCharity/settings.py" />
         <option value="$PROJECT_DIR$/coddy/static/css/style.css" />
         <option value="$PROJECT_DIR$/templates/main.html" />
         <option value="$PROJECT_DIR$/coddy/models.py" />
+        <option value="$PROJECT_DIR$/CoddyCharity/settings.py" />
       </list>
     </option>
   </component>
@@ -703,8 +703,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CoddyCharity/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="107" column="22" lean-forward="true" selection-start-line="107" selection-start-column="22" selection-end-line="107" selection-end-column="22" />
+        <state relative-caret-position="306">
+          <caret line="114" column="0" lean-forward="true" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="0" />
           <folding />
         </state>
       </provider>
