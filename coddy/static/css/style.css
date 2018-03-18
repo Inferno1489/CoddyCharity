@@ -66,8 +66,6 @@ a{
     transition: color 0.2s ease-in;
 }
 .buttons a{
-    border-left: 1px solid #004e9c;
-    border-right: 1px solid #004e9c;
     color: white;
     transition: color 0.2s ease-out;
 }
