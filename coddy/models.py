@@ -48,7 +48,7 @@ class Volunteer(models.Model):
     email = models.EmailField(max_length=100)
     tel = models.CharField(max_length=20)
     date = models.DateField(blank=True, default=timezone.now)
-    time = models.TimeField(blank=True, default=datetime.now())
+    time = models.TimeField(blank=True, default=datetime.datetime.now())
 
     def __str__(self):
         return self.name
