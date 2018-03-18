@@ -30,8 +30,8 @@ header::before{
     left: 0;
     right: 0;
     position: absolute;
-    background-color: #00fff5;
-    opacity: .32;
+    background-color: #00a4ff;
+    opacity: .22;
 }
 .header-container{
     z-index: 1;

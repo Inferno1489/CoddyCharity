@@ -1,3 +1,6 @@
+#!/usr/bin/python
+# -*- coding: UTF-8 -*-
+
 from django.db import models
 from django.utils import timezone
 from datetime import datetime
