@@ -232,7 +232,7 @@
                         {% for vo in Vols %}
                         <li class="amazingcarousel-item">
                             <div class="amazingcarousel-item-container">
-        <div class="amazingcarousel-image"> <a href = "../{{ vo.image }}" title={{ vo.name }} class="html5lightbox" data-group="amazingcarousel-1"><img src="../{{ vo.image }}"  alt={{ vo.name }} /></a></div>
+        <div class="amazingcarousel-image"> <a href = "/{{ vo.image.url }}" title={{ vo.name }} class="html5lightbox" data-group="amazingcarousel-1"><img src="/{{ vo.image.url }}"  alt={{ vo.name }} /></a></div>
         <div class="amazingcarousel-title">{{ vo.name }} {{ vo.surname }}</div>
         <div class="amazingcarousel-description">{{ vo.disc }}</div>                    </div>
                         </li>
