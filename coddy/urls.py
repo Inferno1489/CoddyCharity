@@ -10,4 +10,4 @@ urlpatterns = [
     url(r'^donate/en$', views.donate_en, name="donate_en"),
     url(r'^volunteer/$', views.volunteer, name="volunteer"),
     url(r'^volunteer/en$', views.volunteer_en, name="volunteer_en"),
-] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT) + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
