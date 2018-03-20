@@ -24,13 +24,22 @@
                 <div class="drop-menu">
                     <img src="{% static 'img/drop-menu-icon2.png' %}" alt="Drop menu" align="right">
                 </div>
-                <div class="aboutproj">
+                <div class="aboutproj grid buttons-grid">
                     <img src="{% static 'img/help-icon.png' %}" alt="About project">
                     <a href="#pre1">О проекте</a>
                 </div>
-                <a href="#pre2">Как это работает</a>
-                <a href="#pre3">Как помочь</a>
-                <a href="#pre4">Контакты</a>
+                <div class="hiw grid buttons-grid">
+                    <img src="{% static 'img/hiw-icon.png' %}" alt="How it works">
+                    <a href="#pre2">Как это работает</a>
+                </div>
+                <div class="hth grid buttons-grid">
+                    <img src="{% static 'img/hth-icon.png' %}" alt="How to help">
+                    <a href="#pre3">Как помочь</a>
+                </div>
+                <div class="conts grid buttons-grid">
+                    <img src="{% static 'img/conts-icon.png' %}" alt="Contacts">
+                    <a href="#pre4">Контакты</a>
+                </div>
             </div>
             <div class="change-lang">
                 <a href="{% url "main_en" %}">
