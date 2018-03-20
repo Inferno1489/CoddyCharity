@@ -529,6 +529,9 @@ a{
     .buttons a{
         display: none;
     }
+    .buttons-grid{
+        display: none;
+    }
     .drop-menu{
         display: none;
     }
