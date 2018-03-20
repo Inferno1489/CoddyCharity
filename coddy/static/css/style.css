@@ -563,6 +563,10 @@ a{
     .header-title-name{
         float: left;
     }
+    .change-lang{
+        position: relative;
+        float: right;
+    }
     .buttons, .change-lang{
         float: right;
     }
