@@ -61,6 +61,12 @@ a{
     grid-template-columns: 12vw 12vw 12vw 10vw;
     text-align: center;
 }
+.buttons-grid a{
+    text-align: left;
+}
+.buttons-grid img{
+    text-align: right;
+}
 .buttons-grid{
     grid-template-columns: 30% 70%;
 }
