@@ -21,10 +21,25 @@
                 <span>CODDY | Gulfstream</span>
             </div>
             <div class="buttons bts grid">
-                <a href="#pre1">About project</a>
-                <a href="#pre2">How it works</a>
-                <a href="#pre3">How to help</a>
-                <a href="#pre4">Contacts</a>
+                <div class="drop-menu">
+                    <img src="{% static 'img/drop-menu-icon2.png' %}" alt="Drop menu" align="right">
+                </div>
+                <div class="aboutproj grid buttons-grid">
+                    <img src="{% static 'img/help-icon.png' %}" alt="About project">
+                    <a href="#pre1">About project</a>
+                </div>
+                <div class="hiw grid buttons-grid">
+                    <img src="{% static 'img/hiw-icon.png' %}" alt="How it works">
+                    <a href="#pre2">How it works</a>
+                </div>
+                <div class="hth grid buttons-grid">
+                    <img src="{% static 'img/hth-icon.png' %}" alt="How to help">
+                    <a href="#pre3">How to help</a>
+                </div>
+                <div class="conts grid buttons-grid">
+                    <img src="{% static 'img/conts-icon.png' %}" alt="Contacts">
+                    <a href="#pre4">Contacts</a>
+                </div>
             </div>
             <div class="change-lang">
                 <a href="{% url "main" %}">
