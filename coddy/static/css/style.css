@@ -70,7 +70,7 @@ a{
     text-align: right;
 }
 .buttons-grid{
-    grid-template-columns: 30% 70%;
+    grid-template-columns: 32px 70%;
 }
 .buttons a:hover{
     color: orange;
