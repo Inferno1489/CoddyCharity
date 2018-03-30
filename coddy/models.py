@@ -22,14 +22,27 @@ class Vol(models.Model):
         verbose_name_plural = "Волонтеры"
 
 
+class Kid(models.Model):
+    id = models.AutoField(primary_key=True)
+    name = models.CharField(max_length=30)
+    surname = models.CharField(max_length=30)
+    image = models.ImageField(upload_to='media/img')
+    disc = models.CharField(max_length=300)
+
+    def __str__(self):
+        return self.name
+
+    class Meta:
+        verbose_name = "Ребенок"
+        verbose_name_plural = "Дети"
+
+
 class Donate(models.Model):
     id = models.AutoField(primary_key=True)
     name = models.CharField(max_length=30)
     surname = models.CharField(max_length=30)
     email = models.EmailField(max_length=100)
     tel = models.CharField(max_length=20)
-    comp = models.BooleanField(blank=True)
-    sms = models.BooleanField(blank=True)
     date = models.DateField(blank=True, default=timezone.now)
     time = models.TimeField(blank=True, default=datetime.datetime.now())
 

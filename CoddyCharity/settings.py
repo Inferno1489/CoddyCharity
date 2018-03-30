@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'fl%1pn+r3&4zivuse(k(6v-i4b@a+xou16wgoy!f^b@4x_lb!0'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['ivan1489.pythonanywhere.com']
+ALLOWED_HOSTS = ['www.donate-coding.com']
 
 
 # Application definition
@@ -102,6 +102,14 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 
+DEFAULT_FROM_EMAIL = 'expression2tutors@gmail.com'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT=25
+EMAIL_USE_TLS=True
+EMAIL_HOST_USER=DEFAULT_FROM_EMAIL
+EMAIL_HOST_PASSWORD='14897548975'
+SERVER_EMAIL = DEFAULT_FROM_EMAIL
+
 # Internationalization
 # https://docs.djangoproject.com/en/1.11/topics/i18n/
 
@@ -118,7 +126,14 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
-STATIC_ROOT = '/home/Ivan1489/CoddyCharity/static'
+
 STATIC_URL = '/static/'
-MEDIA_ROOT = '/home/Ivan1489/CoddyCharity/media'
-MEDIA_URL = '/media/'
+
+
+MEDIA_URL = 'media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+#STATIC_ROOT = '/home/Ivan1489/CoddyCharity/static'
+#STATIC_URL = '/static/'
+#MEDIA_ROOT = '/home/Ivan1489/CoddyCharity/media'
+#MEDIA_URL = '/media/'

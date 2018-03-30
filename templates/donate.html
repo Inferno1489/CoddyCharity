@@ -12,7 +12,7 @@
     <link rel="shortcut icon" href="{% static 'img/coddy-icon.png' %}" type="image/x-icon">
     <script src="{% static 'js/jquery.js' %}"></script>
     <script src="{% static 'js/alertify.min.js' %}"></script>
-    <script src="{% static 'js/checkboxcheck.js' %}"></script>
+    <script src="{% static 'js/checkbox2.js' %}"></script>
     <script src="{% static 'js/wow.min.js' %}"></script>
     <script>
         new WOW().init();
@@ -73,21 +73,6 @@
                 </div>
                 <br>
                 <div class="checkboxes required">
-                    <div class="chb-title">
-                        <span>Хочу пожертвовать</span>
-                    </div>
-                    <div class="chbs required">
-                        <div class="chb">
-                            {{ form.comp }}
-                            <label for="comp">Компьютер</label>
-                        </div>
-                        <br>
-                        <div class="chb mar">
-                            {{ form.sms }}
-                            <label for="sms">Я отправил(а) СМС с пожертвованием на номер 3443</label>
-                        </div>
-                    </div>
-                    <br>
                     <div class="chb mar required">
                         <input type="checkbox" required id="policy">
                         <label for="policy">Я подтверждаю свое согласие на обработку моих персональных данных.
