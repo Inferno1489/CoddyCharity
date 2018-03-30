@@ -3,7 +3,7 @@ jQuery(document).ready(function(){
     var jsFolder = "";
     for (var i= 0; i< scripts.length; i++)
     {
-        if( scripts[i].src && scripts[i].src.match(/initcarousel-1\.js/i))
+        if( scripts[i].src && scripts[i].src.match(/initcarousel-2\.js/i))
             jsFolder = scripts[i].src.substr(0, scripts[i].src.lastIndexOf("/") + 1);
     }
     if ( typeof html5Lightbox === "undefined" )
@@ -23,7 +23,7 @@ jQuery(document).ready(function(){
             descriptionbottomcss:'{color:#333; font-size:12px; font-family:Arial,Helvetica,sans-serif; overflow:hidden; text-align:left; margin:4px 0px 0px; padding: 0px;}'
         });
     }
-    jQuery("#amazingcarousel-1").amazingcarousel({
+    jQuery("#amazingcarousel-2").amazingcarousel({
         jsfolder:jsFolder,
         width:240,
         height:180,
@@ -32,7 +32,7 @@ jQuery(document).ready(function(){
         itembottomshadowimagetop:99,
         donotcrop:false,
         random:false,
-        showhoveroverlay:true,
+        showhoveroverlay:false,
         rownumber:1,
         height:180,
         arrowheight:48,
@@ -71,7 +71,7 @@ jQuery(document).ready(function(){
         backgroundimagewidth:110,
         showbackgroundimage:false,
         lightboxbarheight:64,
-        showplayvideo:true,
+        showplayvideo:false,
         spacing:4,
         lightboxthumbwidth:80,
         navdirection:"horizontal",
@@ -96,7 +96,7 @@ jQuery(document).ready(function(){
         imagefillcolor:"FFFFFF",
         playvideoimage:"playvideo-64-64-0.png",
         transitionduration:1000,
-        visibleitems:3,
+        visibleitems:4,
         imagewidth:240,
         usescreenquery:false,
         bottomshadowimagewidth:110,
