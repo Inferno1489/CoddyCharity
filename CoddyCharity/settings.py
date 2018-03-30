@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'fl%1pn+r3&4zivuse(k(6v-i4b@a+xou16wgoy!f^b@4x_lb!0'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['www.donate-coding.com','webapp-404709.pythonanywhere.com','194.58.112.174','ns1.reg.com','n2.reg.com']
+ALLOWED_HOSTS = ['www.donate-coding.com']
 
 
 # Application definition
