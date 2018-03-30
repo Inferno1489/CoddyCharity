@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'fl%1pn+r3&4zivuse(k(6v-i4b@a+xou16wgoy!f^b@4x_lb!0'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['www.donate-coding.com']
 
@@ -127,6 +127,11 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
+#STATIC_URL = '/static/'
+
+
+#MEDIA_URL = 'media/'
+#MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 STATIC_ROOT = '/home/Ivan1489/CoddyCharity/static'
 STATIC_URL = '/static/'

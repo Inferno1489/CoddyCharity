@@ -196,7 +196,7 @@ h1,h2,h3,h4{
     color: white;
     position: relative;
     top: 14px;
-    padding: 16px 76px 18px 76px;
+    padding: 14px 70px 16px 70px;
 }
 .text-and-hand{
     grid-template-columns: 1fr 1fr;
@@ -998,6 +998,9 @@ h1,h2,h3,h4{
 }
 @media all and (max-width: 700px){
     .nav{
+        display: none;
+    }
+    .buts{
         display: none;
     }
     .main-header{
